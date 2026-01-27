@@ -887,3 +887,59 @@ body {
         font-size: 0.9rem;
     }
 }
+
+/* Vision & Mission Cards - Responsive Fix */
+.vision-mission-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 350px), 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+    max-width: 100%;
+}
+
+.vision-mission-card {
+    padding: 2.5rem 2rem;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+    max-width: 100%;
+    width: 100%;
+}
+
+.vision-card {
+    background: linear-gradient(135deg, rgba(52, 152, 219, 0.05) 0%, rgba(41, 128, 185, 0.08) 100%);
+    border: 1px solid rgba(52, 152, 219, 0.15);
+}
+
+.mission-card {
+    background: linear-gradient(135deg, rgba(46, 204, 113, 0.05) 0%, rgba(39, 174, 96, 0.08) 100%);
+    border: 1px solid rgba(46, 204, 113, 0.15);
+}
+
+.vision-mission-card:hover {
+    transform: translateY(-10px);
+}
+
+.vision-card:hover {
+    box-shadow: 0 20px 50px rgba(52, 152, 219, 0.15);
+}
+
+.mission-card:hover {
+    box-shadow: 0 20px 50px rgba(46, 204, 113, 0.15);
+}
+
+@media (max-width: 768px) {
+    .vision-mission-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .vision-mission-card {
+        padding: 2rem 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .vision-mission-card {
+        padding: 1.5rem 1rem;
+    }
+}
