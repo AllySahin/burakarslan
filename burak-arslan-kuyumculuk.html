@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Burak Arslan Kuyumculuk - Burak Arslan</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Allura&family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .jewelry-hero {
+            min-height: 70vh;
+            background: linear-gradient(135deg, rgba(184, 134, 11, 0.95) 0%, rgba(218, 165, 32, 0.92) 50%, rgba(212, 175, 55, 0.90) 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .jewelry-hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('burak-kuyumculuk.jpeg') center/cover no-repeat;
+            z-index: 0;
+            opacity: 0.2;
+        }
+
+        .jewelry-hero-content {
+            position: relative;
+            z-index: 2;
+            text-align: center;
+            color: white;
+            padding: 2rem;
+        }
+
+        .jewelry-hero h1 {
+            font-size: 4rem;
+            font-weight: 800;
+            margin-bottom: 1rem;
+            text-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+        }
+
+        .jewelry-hero p {
+            font-size: 1.5rem;
+            margin-bottom: 2rem;
+            text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .jewelry-content {
+            padding: 6rem 0;
+            background: var(--white);
+        }
+
+        .jewelry-features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 4rem;
+        }
+
+        .jewelry-feature-box {
+            background: linear-gradient(135deg, rgba(212, 175, 55, 0.08) 0%, rgba(255, 215, 0, 0.05) 50%, rgba(255, 248, 220, 0.03) 100%);
+            padding: 2.5rem 2rem;
+            border-radius: 15px;
+            text-align: center;
+            transition: all 0.3s ease;
+            border: 1px solid rgba(212, 175, 55, 0.15);
+        }
+
+        .jewelry-feature-box:hover {
+            transform: translateY(-5px);
+            background: linear-gradient(135deg, rgba(212, 175, 55, 0.12) 0%, rgba(255, 215, 0, 0.08) 50%, rgba(255, 248, 220, 0.05) 100%);
+            border-color: rgba(212, 175, 55, 0.25);
+            box-shadow: 0 10px 30px rgba(212, 175, 55, 0.2);
+        }
+
+        .jewelry-feature-box svg {
+            width: 60px;
+            height: 60px;
+            color: var(--jewelry-primary);
+            margin-bottom: 1rem;
+        }
+
+        .jewelry-feature-box h3 {
+            color: var(--jewelry-primary);
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+        }
+
+        .jewelry-feature-box p {
+            color: var(--text-light);
+            line-height: 1.8;
+        }
+
+        .back-button {
+            display: inline-block;
+            padding: 1rem 2rem;
+            background: var(--jewelry-primary);
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 600;
+            margin-top: 2rem;
+            transition: all 0.3s ease;
+        }
+
+        .back-button:hover {
+            background: var(--jewelry-secondary);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(212, 175, 55, 0.3);
+        }
+    </style>
+</head>
+<body>
+    <!-- Jewelry Hero Section -->
+    <section class="jewelry-hero">
+        <div class="jewelry-hero-content">
+            <h1>Burak Arslan Kuyumculuk</h1>
+            <p>Değerli Anlar, Değerli Mücevherler</p>
+        </div>
+    </section>
+
+    <!-- Jewelry Content -->
+    <section class="jewelry-content">
+        <div class="container">
+            <h2 class="section-title">Hakkımızda</h2>
+            <p style="text-align: center; max-width: 800px; margin: 2rem auto; font-size: 1.1rem; color: var(--text-light); line-height: 1.9;">
+                Eşsiz tasarımlar ve yüksek kaliteli işçilikle değerli anlarınıza değer katıyoruz. Altın, gümüş ve değerli taşlarla özel koleksiyonlarımız sizleri bekliyor. Her mücevherimiz, ustalık ve özeniyle hazırlanmıştır.
+            </p>
+
+            <!-- Gallery -->
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 2.5rem; margin-top: 3rem;">
+                <img src="kuyumcu-1.jpeg" alt="Burak Arslan Kuyumculuk" style="width: 100%; height: 450px; object-fit: cover; border-radius: 20px; box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15); transition: transform 0.3s ease, box-shadow 0.3s ease;" onmouseover="this.style.transform='translateY(-10px)'; this.style.boxShadow='0 20px 50px rgba(0, 0, 0, 0.15)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 15px 35px rgba(0, 0, 0, 0.15)'">
+                <img src="kuyumcu-2.jpeg" alt="Burak Arslan Kuyumculuk Koleksiyon" style="width: 100%; height: 450px; object-fit: cover; border-radius: 20px; box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15); transition: transform 0.3s ease, box-shadow 0.3s ease;" onmouseover="this.style.transform='translateY(-10px)'; this.style.boxShadow='0 20px 50px rgba(0, 0, 0, 0.15)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 15px 35px rgba(0, 0, 0, 0.15)'">
+                <img src="kuyumcu-3.jpeg" alt="Burak Arslan Kuyumculuk Tasarım" style="width: 100%; height: 450px; object-fit: cover; border-radius: 20px; box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15); transition: transform 0.3s ease, box-shadow 0.3s ease;" onmouseover="this.style.transform='translateY(-10px)'; this.style.boxShadow='0 20px 50px rgba(0, 0, 0, 0.15)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 15px 35px rgba(0, 0, 0, 0.15)'">
+            </div>
+
+            <!-- Features -->
+            <div class="jewelry-features">
+                <div class="jewelry-feature-box">
+                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <h3>Özel Tasarım</h3>
+                    <p>Hayalinizdeki mücevheri özel tasarım hizmetimizle hayata geçirin.</p>
+                </div>
+
+                <div class="jewelry-feature-box">
+                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <h3>Pırlanta & Altın</h3>
+                    <p>Sertifikalı pırlanta ve 14-22 ayar altın ürünlerde geniş koleksiyon.</p>
+                </div>
+
+                <div class="jewelry-feature-box">
+                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M20 21V5C20 3.89543 19.1046 3 18 3H6C4.89543 3 4 3.89543 4 5V21M20 21H4M20 21H21M4 21H3M8 7H10M8 11H10M8 15H10M14 7H16M14 11H16M14 15H16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <h3>Güvenilir Alım-Satım</h3>
+                    <p>Şeffaf fiyatlandırma ile altın alım-satım ve takas hizmetleri.</p>
+                </div>
+            </div>
+
+            <!-- Location & Contact -->
+            <div style="margin-top: 5rem;">
+                <h2 class="section-title">Bizi Ziyaret Edin</h2>
+                
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin-top: 3rem;">
+                    <!-- Address -->
+                    <div class="jewelry-feature-box">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M17.657 16.657L13.414 20.9C12.6331 21.6809 11.3669 21.6809 10.586 20.9L6.343 16.657C3.22573 13.5397 3.22573 8.46028 6.343 5.34301C9.46027 2.22574 14.5397 2.22574 17.657 5.34301C20.7743 8.46028 20.7743 13.5397 17.657 16.657Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M12 12C13.1046 12 14 11.1046 14 10C14 8.89543 13.1046 8 12 8C10.8954 8 10 8.89543 10 10C10 11.1046 10.8954 12 12 12Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <h3>Adres</h3>
+                        <p>Kırıkkale</p>
+                        <a href="https://www.google.com/maps/place/39.843023,33.506184" target="_blank" style="display: inline-block; margin-top: 1rem; color: var(--jewelry-primary); font-weight: 600; text-decoration: none;">
+                            Haritada Görüntüle →
+                        </a>
+                    </div>
+
+                    <!-- Instagram -->
+                    <div class="jewelry-feature-box">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="2" y="2" width="20" height="20" rx="5" ry="5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M16 11.37C16.1234 12.2022 15.9813 13.0522 15.5938 13.799C15.2063 14.5458 14.5931 15.1514 13.8416 15.5297C13.0901 15.9079 12.2384 16.0396 11.4078 15.9059C10.5771 15.7723 9.80976 15.3801 9.21484 14.7852C8.61992 14.1902 8.22773 13.4229 8.09407 12.5922C7.9604 11.7616 8.09207 10.9099 8.47033 10.1584C8.84859 9.40685 9.45419 8.79374 10.201 8.40624C10.9478 8.01874 11.7978 7.87659 12.63 8C13.4789 8.12588 14.2649 8.52146 14.8717 9.1283C15.4785 9.73515 15.8741 10.5211 16 11.37Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <circle cx="17.5" cy="6.5" r="1.5" fill="currentColor"/>
+                        </svg>
+                        <h3>Bizi Takip Edin</h3>
+                        <p>@incii.kuyumculuk</p>
+                        <a href="https://www.instagram.com/incii.kuyumculuk?igsh=NXR5Zm4zcjUyMXZq&utm_source=qr" target="_blank" style="display: inline-block; margin-top: 1rem; color: var(--jewelry-primary); font-weight: 600; text-decoration: none;">
+                            Instagram'da Görüntüle →
+                        </a>
+                    </div>
+
+                    <!-- Hours -->
+                    <div class="jewelry-feature-box">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M12 6V12L16 14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <h3>Çalışma Saatleri</h3>
+                        <p>Hafta İçi & Cumartesi:<br>09:00 - 20:00</p>
+                    </div>
+                </div>
+
+                <!-- Map Embed -->
+                <div style="margin-top: 3rem; border-radius: 20px; overflow: hidden; box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3045.2!2d33.506184!3d39.843023!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMznCsDUwJzM0LjkiTiAzM8KwMzAnMjIuMyJF!5e0!3m2!1str!2str!4v1234567890" 
+                        width="100%" 
+                        height="450" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+
+            <div style="text-align: center; margin-top: 4rem;">
+                <a href="index.html" class="back-button">Ana Sayfaya Dön</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Burak Arslan - Burak Arslan Kuyumculuk. Tüm hakları saklıdır.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
