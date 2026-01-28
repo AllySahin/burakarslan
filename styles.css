@@ -365,6 +365,170 @@ body {
     }
 }
 
+/* Who is Burak Arslan Section */
+.who-is-section {
+    padding: 6rem 0;
+    background: linear-gradient(135deg, rgba(26, 26, 46, 0.02) 0%, rgba(15, 52, 96, 0.02) 100%);
+    position: relative;
+}
+
+.who-is-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle at 20% 50%, rgba(15, 52, 96, 0.03) 0%, transparent 50%);
+    pointer-events: none;
+}
+
+.who-is-content {
+    max-width: 900px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+}
+
+.who-is-text {
+    background: white;
+    padding: 3.5rem;
+    border-radius: 20px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.06);
+    position: relative;
+    overflow: hidden;
+}
+
+.who-is-text::before {
+    content: '"';
+    position: absolute;
+    top: -10px;
+    left: 20px;
+    font-size: 150px;
+    font-family: Georgia, serif;
+    color: rgba(15, 52, 96, 0.04);
+    line-height: 1;
+    font-weight: bold;
+}
+
+.who-is-text p {
+    margin-bottom: 1.5rem;
+    color: var(--text-light);
+    font-size: 1.1rem;
+    line-height: 1.9;
+    text-align: justify;
+    position: relative;
+    z-index: 1;
+}
+
+.lead-text {
+    font-size: 1.25rem !important;
+    color: var(--text-dark) !important;
+    font-weight: 600 !important;
+    line-height: 1.8 !important;
+    margin-bottom: 2rem !important;
+    padding-left: 20px;
+    border-left: 4px solid var(--accent-color);
+}
+
+.philosophy-box {
+    background: linear-gradient(135deg, rgba(15, 52, 96, 0.05) 0%, rgba(26, 26, 46, 0.03) 100%);
+    padding: 2rem;
+    border-radius: 15px;
+    margin: 2.5rem 0;
+    border-left: 4px solid var(--accent-color);
+}
+
+.philosophy-item {
+    margin-bottom: 1rem !important;
+    font-size: 1.05rem !important;
+    color: var(--text-dark) !important;
+}
+
+.philosophy-item:last-child {
+    margin-bottom: 0 !important;
+}
+
+.philosophy-item strong {
+    color: var(--primary-color);
+    font-weight: 700;
+}
+
+.quote-box {
+    background: var(--primary-color);
+    color: white;
+    padding: 2rem 2.5rem;
+    border-radius: 15px;
+    margin: 2.5rem 0;
+    text-align: center;
+    box-shadow: 0 8px 30px rgba(26, 26, 46, 0.15);
+    position: relative;
+    overflow: hidden;
+}
+
+.quote-box::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -10%;
+    width: 200px;
+    height: 200px;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.05) 0%, transparent 70%);
+    border-radius: 50%;
+}
+
+.quote-box p {
+    font-size: 1.15rem !important;
+    font-style: italic;
+    color: white !important;
+    font-weight: 600;
+    line-height: 1.8 !important;
+    text-align: center !important;
+    margin: 0 !important;
+    position: relative;
+    z-index: 1;
+}
+
+.summary-text {
+    font-size: 1.15rem !important;
+    color: var(--text-dark) !important;
+    font-weight: 600 !important;
+    margin-top: 2.5rem !important;
+}
+
+.signature-statement {
+    margin-top: 3rem;
+    padding: 2.5rem;
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--accent-color) 100%);
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 10px 40px rgba(15, 52, 96, 0.2);
+}
+
+.statement-title {
+    font-size: 2rem !important;
+    font-weight: 800 !important;
+    color: white !important;
+    letter-spacing: 3px !important;
+    margin-bottom: 1rem !important;
+    text-transform: uppercase;
+}
+
+.statement-subtitle {
+    font-size: 1.3rem !important;
+    color: rgba(255, 255, 255, 0.95) !important;
+    font-weight: 600 !important;
+    margin-bottom: 0.8rem !important;
+    letter-spacing: 1px;
+}
+
+.statement-description {
+    font-size: 1.1rem !important;
+    color: rgba(255, 255, 255, 0.85) !important;
+    font-style: italic;
+    margin: 0 !important;
+}
+
 /* Business Section */
 .businesses {
     padding: 6rem 0;
@@ -936,10 +1100,87 @@ body {
     .vision-mission-card {
         padding: 2rem 1.5rem;
     }
+    
+    /* Who is Section Responsive */
+    .who-is-section {
+        padding: 4rem 0;
+    }
+    
+    .who-is-text {
+        padding: 2rem 1.5rem;
+    }
+    
+    .lead-text {
+        font-size: 1.1rem !important;
+        padding-left: 15px;
+    }
+    
+    .philosophy-box {
+        padding: 1.5rem;
+    }
+    
+    .quote-box {
+        padding: 1.5rem;
+    }
+    
+    .signature-statement {
+        padding: 2rem 1.5rem;
+    }
+    
+    .statement-title {
+        font-size: 1.5rem !important;
+        letter-spacing: 2px !important;
+    }
+    
+    .statement-subtitle {
+        font-size: 1.1rem !important;
+    }
+    
+    .statement-description {
+        font-size: 1rem !important;
+    }
 }
 
 @media (max-width: 480px) {
     .vision-mission-card {
         padding: 1.5rem 1rem;
+    }
+    
+    /* Who is Section Mobile */
+    .who-is-text {
+        padding: 1.5rem 1rem;
+    }
+    
+    .who-is-text p {
+        font-size: 1rem;
+        text-align: left;
+    }
+    
+    .lead-text {
+        font-size: 1.05rem !important;
+    }
+    
+    .philosophy-box {
+        padding: 1.25rem;
+    }
+    
+    .philosophy-item {
+        font-size: 0.95rem !important;
+    }
+    
+    .quote-box {
+        padding: 1.25rem;
+    }
+    
+    .quote-box p {
+        font-size: 1rem !important;
+    }
+    
+    .signature-statement {
+        padding: 1.5rem 1rem;
+    }
+    
+    .statement-title {
+        font-size: 1.3rem !important;
     }
 }
